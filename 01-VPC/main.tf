@@ -1,6 +1,7 @@
 module "roboshop" {
   #source       = "../../Terraform-VPC/Module-Use-From-Git"
-  source       = "git::https://github.com/jkdasari31/Terraform-VPC.git?ref=main"
+  source       = "git::https://github.com/jkdasari31/terraform-aws-vpc.git?ref=main"
+  #source       = "git::https://github.com/daws-76s/terraform-aws-vpc.git?ref=main"
   project_name = var.project_name
   vpc_cidr     = var.vpc_cidr
   environment  = var.environment
