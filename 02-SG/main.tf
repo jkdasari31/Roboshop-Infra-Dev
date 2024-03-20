@@ -1,5 +1,6 @@
 module "vpn" {
-  source         = "../../Terraform-aws-SG"
+  # source         = "../../Terraform-aws-SG"
+  source         = "git::https://github.com/jkdasari31/Terraform-aws-SG.git?ref=main"
   project_name   = var.project_name
   environment    = var.environment
   sg_description = "SG for VPN"
@@ -9,7 +10,7 @@ module "vpn" {
 }
 
 module "mongodb" {
-  source         = "../../Terraform-aws-SG"
+  source         = "git::https://github.com/jkdasari31/Terraform-aws-SG.git?ref=main"
   project_name   = var.project_name
   environment    = var.environment
   sg_description = "SG for MongoDB"
@@ -19,7 +20,7 @@ module "mongodb" {
 }
 
 module "redis" {
-  source         = "../../Terraform-aws-SG"
+  source         = "git::https://github.com/jkdasari31/Terraform-aws-SG.git?ref=main"
   project_name   = var.project_name
   environment    = var.environment
   sg_description = "SG for redis"
@@ -29,7 +30,7 @@ module "redis" {
 }
 
 module "mysql" {
-  source         = "../../Terraform-aws-SG"
+  source         = "git::https://github.com/jkdasari31/Terraform-aws-SG.git?ref=main"
   project_name   = var.project_name
   environment    = var.environment
   sg_description = "SG for mysql"
@@ -39,7 +40,7 @@ module "mysql" {
 }
 
 module "rabbitmq" {
-  source         = "../../Terraform-aws-SG"
+  source         = "git::https://github.com/jkdasari31/Terraform-aws-SG.git?ref=main"
   project_name   = var.project_name
   environment    = var.environment
   sg_description = "SG for rabbitmq"
@@ -49,7 +50,7 @@ module "rabbitmq" {
 }
 
 module "catalogue" {
-  source         = "../../Terraform-aws-SG"
+  source         = "git::https://github.com/jkdasari31/Terraform-aws-SG.git?ref=main"
   project_name   = var.project_name
   environment    = var.environment
   sg_description = "SG for catalogue"
@@ -59,7 +60,7 @@ module "catalogue" {
 }
 
 module "user" {
-  source         = "../../Terraform-aws-SG"
+  source         = "git::https://github.com/jkdasari31/Terraform-aws-SG.git?ref=main"
   project_name   = var.project_name
   environment    = var.environment
   sg_description = "SG for user"
@@ -69,7 +70,7 @@ module "user" {
 }
 
 module "cart" {
-  source         = "../../Terraform-aws-SG"
+  source         = "git::https://github.com/jkdasari31/Terraform-aws-SG.git?ref=main"
   project_name   = var.project_name
   environment    = var.environment
   sg_description = "SG for cart"
@@ -79,7 +80,7 @@ module "cart" {
 }
 
 module "shipping" {
-  source         = "../../Terraform-aws-SG"
+  source         = "git::https://github.com/jkdasari31/Terraform-aws-SG.git?ref=main"
   project_name   = var.project_name
   environment    = var.environment
   sg_description = "SG for shipping"
@@ -89,7 +90,7 @@ module "shipping" {
 }
 
 module "payment" {
-  source         = "../../Terraform-aws-SG"
+  source         = "git::https://github.com/jkdasari31/Terraform-aws-SG.git?ref=main"
   project_name   = var.project_name
   environment    = var.environment
   sg_description = "SG for payment"
@@ -99,7 +100,7 @@ module "payment" {
 }
 
 module "web" {
-  source         = "../../Terraform-aws-SG"
+  source         = "git::https://github.com/jkdasari31/Terraform-aws-SG.git?ref=main"
   project_name   = var.project_name
   environment    = var.environment
   sg_description = "SG for web"
@@ -109,7 +110,7 @@ module "web" {
 }
 
 module "app_alb" {
-  source         = "../../Terraform-aws-SG"
+  source         = "git::https://github.com/jkdasari31/Terraform-aws-SG.git?ref=main"
   project_name   = var.project_name
   environment    = var.environment
   sg_description = "SG for APP ALB"
@@ -119,7 +120,7 @@ module "app_alb" {
 }
 
 module "web_alb" {
-  source         = "../../Terraform-aws-SG"
+  source         = "git::https://github.com/jkdasari31/Terraform-aws-SG.git?ref=main"
   project_name   = var.project_name
   environment    = var.environment
   sg_description = "SG for Web ALB"
